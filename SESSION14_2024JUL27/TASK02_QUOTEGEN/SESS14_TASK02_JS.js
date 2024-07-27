@@ -26,5 +26,44 @@ btn.addEventListener("click",  function() {
 });
 
 
+// Create an array of objects with nested objects
+const quotes = [
+    { 
+        name: 'Hossam',
+        wisdom: 'The World is a Beautiful Place!'
+    },
+    { 
+        name: 'Max',
+        wisdom: 'Its just an Inchident!'
+    },
+    { 
+        name: 'Taylor',
+        wisdom: 'Its a cold december'
+    }
+];
 
-// I want to map specific products to each merchant
+
+// Event Handling
+let quoteDiv = document.getElementsByClassName("quoteGen");
+const generateButton = document.getElementById("generate");
+
+generateButton.addEventListener("click",  () => {
+    console.log("Generate Button clicked, Hello Hossam");
+
+    // Use map to create an array of HTML strings
+    const quoteHtml = quotes.map(quote => {
+        return `${quotes.name} is ${quotes.wisdom} years old.`;
+    });
+    
+    // Join the array into a single string and set it as the innerHTML of resultDiv
+    quoteDiv.innerHTML = quoteHtml.join('');
+});
+
+
+
+// Iterate over the array and display each element
+// quotes.forEach(quote => {
+//     const randomDiv = document.createElement('div');
+//     randomDiv.textContent = `${quotes.name} is ${quotes.quote} years old.`;
+//     quoteDiv.appendChild(randomDiv);
+// });
