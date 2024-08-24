@@ -10,4 +10,10 @@ Makes Code maintenance easier
 Code Debugging Easier
 Makes Code less redundant
 
+Adding JS Files into HTML Causes the following:
+- Loading Time
+- Dependency of the files
+
 Adding JS Files into the HTML Files is not Preferable, we need to change this approach
+
+So we need to use the Modules for this matters, REACT depends on Modules
