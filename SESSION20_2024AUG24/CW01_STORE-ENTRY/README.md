@@ -17,3 +17,8 @@ Adding JS Files into HTML Causes the following:
 Adding JS Files into the HTML Files is not Preferable, we need to change this approach
 
 So we need to use the Modules for this matters, REACT depends on Modules
+
+Different Types of errors in Javascript
+
+Try -> Catch -> Finally
+
